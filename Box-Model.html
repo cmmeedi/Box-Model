@@ -9,20 +9,243 @@
   </head>
 
   <body>
-    <h1>Hello</h1>
-    <div id="one">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere
-      assumenda ex dolor iusto delectus perferendis fugit non porro laudantium.
+    <header>
+      <h1>Box Model</h1>
+    </header>
+
+    <div class="one" id="one">
+      In this section I learn about the Box model and how to design boxes using
+      styles such as:
+      <ul>
+        <li>Border</li>
+        <li>Padding</li>
+        <li>Margin</li>
+        <li>Display</li>
+        <li>Units</li>
+      </ul>
     </div>
 
-    <div id="two">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse
-      voluptas veniam ex id aspernatur!
+    <div class="one" id="onetwo">
+      <h2>What I Learned</h2>
+      <hr>
+      <ul>
+        <li>Border</li>
+        <p>
+          Borders are the lines around a box. These lines can be styled
+          differently by changing up the Width, Color, Style, and Radius.
+        </p>
+
+        <li>Padding</li>
+        <p>
+          Within these borders are content whether it be an image or text within
+          a p element. The space between this content and the borders is called
+          padding and that space can be enlarged or minimized in accordance to
+          how the user wants.
+        </p>
+
+        <li>Margin</li>
+        <p>
+          As Padding does for the space within an elements borders, Margin does
+          the same for the outside of an elements borders.
+        </p>
+
+        <li>Display</li>
+        <p>
+          Elements can be changed from either Inline to Block with the Display
+          property.
+        </p>
+      </ul>
     </div>
 
-    <div id="three">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deserunt
-      odio itaque.
+    <div class="two" id="two">Border</div>
+
+    <div class="two" id="twotwo">
+      <ul>
+        <li>Border Width</li>
+        <p>
+          Border width will determine how thick the walls of a box(border) will
+          be
+        </p>
+        <li>Border Style</li>
+        <p>
+          The style of the border can be among many but a few exmaples you can
+          see around each of the sections of within this site. You can see a
+          Ridge style, Double Style, Solid Style and None style.
+        </p>
+        <li>Border Color</li>
+        <p>The border color will change what color is assigned to the border</p>
+        <li>Border Shorthand</li>
+        <p>
+          border: 3px solid black; This is the shorthand for styling borders.
+          From left to right it assigns the border width, then the style then
+          the color.
+        </p>
+        <li>Border Radius</li>
+        <p>
+          The corners of borders can be rounded by adjusting the border radius.
+          You can see the borders on some of these sections are rounded and this
+          was done by using border radius.
+        </p>
+      </ul>
     </div>
+
+    <div class="three" id="three">Padding and Margin</div>
+    <div class="three" id="threetwo">
+      <ul>
+        <li id="padding"><h2>Padding</h2></li>
+        <hr>
+        <p>
+          Padding is the space between an elements border and the content within
+          the borders
+        </p>
+        <li>Padding All Around</li>
+        <p>padding: 50px; /*(for example)*/</p>
+        <p>
+          Will apply 50px of padding to each side of the content within the
+          borders of an element
+        </p>
+        <li>Padding Vertical/Horizontal</li>
+        <p>
+          padding: 50px 25px; /*(for example)*/
+        </p>
+        <p>
+          Will apply 50px of padding to the top and bottom and will apply 25px
+          to the left and right of the content within the elements borders
+        </p>
+        <li>Padding Top/Horizontal/Bottom</li>
+        <p>
+          padding: 25px 30px 70px;
+        </p>
+        <p>
+          will apply 25px to the top, 30px to the left and the right, and 70px
+          to the bottom of the content within an elements border
+        </p>
+        <li>Padding(Shorthand) Top/Right/Bottom/Left</li>
+        <p>
+          The shorthand property of Padding allows you to assign the padding to
+          each side of the content using 1 style declaration
+        </p>
+        <p>
+          padding: 25px, 20px, 10px, 70px;
+        </p>
+        <p>
+          the convention for this is clockwise starting from the top so 25px
+          top, 20px right, 10px bottom, 70px left.
+        </p>
+        <li id="margin"><h2>Margin</h2></li>
+        <hr>
+        <p>Margin is the space between two separate elements</p>
+        <li>Margin All Around</li>
+        <p>
+          margin: 50px; /*(for example)*/
+        </p>
+        <p>
+          Will apply 50px of margin to the outside of an elements borders
+        </p>
+        <li>Margin Vertical/Horizontal</li>
+        <p>
+          margin: 50px 25px; /*(for example)*/
+        </p>
+        <p>
+          Will apply 50px of margin to the top and bottom and will apply 25px to
+          the left and right of the outside of an elements borders
+        </p>
+        <li>Margin Top/Horizontal/Bottom</li>
+        <p>
+          margin: 25px 30px 70px;
+        </p>
+        <p>
+          will apply 25px to the top, 30px to the left and the right, and 70px
+          to the bottom of the outside of an elements borders
+        </p>
+        <li>Margin(Shorthand) Top/Right/Bottom/Left</li>
+        <p>
+          The shorthand property of Padding allows you to assign the margin to
+          each side of the content using 1 style declaration
+        </p>
+        <p>
+          margin: 25px, 20px, 10px, 70px;
+        </p>
+        <p></p>
+          the convention for this is clockwise starting from the top so 25px
+          top, 20px right, 10px bottom, 70px left.
+        </p>
+      </ul>
+    </div>
+
+    <div class="four" id="four">Display and Units</div>
+    <div class="four" id="fourtwo">
+
+      <ul>
+        <li id="display"><h2>Display</h2>
+          <hr>
+        </li>
+        <li>Inline</li>
+        <p>
+          Inline will take all the elements selected and place them side by side
+        </p>
+        <li>Block</li>
+        <p>
+          Block display will assign a whole Block(row) for the selected element
+        </p>
+        <li>Inline-Block</li>
+        <p>
+          Inline-Block will allow you to place block oriented elements side by
+          side but also allow certain styles like 'Margin' and 'Padding' to take
+          effect.
+        </p>
+        <li id="units"><h2>Units</h3></li>
+          <hr>
+          <li>px</li>
+          <p>
+            Pixels are referring to Pixels like those on your screen.  These are small units and are generally used when making small adjustments (or at least should be).  
+          </p>
+          <li>Percentages</li>
+          <p>Percentages are in reference to whatever element that your selector is assigned to and will reference that elements size to give an exact percentage proportion</p>
+          <li>em</li>
+          <p>Referring to the parent element, the font size you set with 'em' is that of the parent element.  3em is 3 times the size of the parent element</p>
+          <p>The 'em' can also refer to the size of the element within itself.  Kind of confusing but whatever the text element size is, within the selector the 'em' will refer to the 'em' within the parent of the current selector. 
+          </p>
+          <p>
+            Here is an example:
+            <br>
+            body{
+              <br>
+              font-size: 100px;
+              <br>              
+            }
+            <br>
+            main{
+              <br>
+              font-size: 1em; /* This font size is equal to 100px */
+              <br>
+            }
+            <br>
+            div{
+              <br>
+              font-size: .5em; /* This font size is equal to 50px */
+              <br>
+            }
+            <br>
+            p{
+              <br>
+              font-size: 1em; /* This font size is equal to 50px */
+              <br>
+            }
+          </p>
+          <p>
+          NOTE: if this is too confusing to understand stick with the description above until it is understood</p>
+
+          <p>
+            Because em always refer to the parent element this can cause some unforseen madness like with nested lists.  The size can drastically change rather quickly due to parent elements being created without thought.  
+          </p>
+          <li>REM</li>
+          <p>or Root em.  Rem will only and alway refer to the root element when sizes are being adjusted.  This can prevent the above mentioned "madness" from happening since there is only one reference to size</p>
+          <p>If no root element is set then by default whatever the font size of the 'HTML' tag at the very top of the HTML document is will be the root size.</p>
+      </ul>
+
+    </div>
+
+    <footer>&copy Chester Meedi April 9th, 2022</footer>
   </body>
 </html>

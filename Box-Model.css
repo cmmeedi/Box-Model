@@ -1,35 +1,171 @@
+body{
+    background: linear-gradient(to left, #6d6875 40%, #6d6875 35%, #bbbbbc 72%, #6d6875 75%) ;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto auto auto auto;
+    min-height: 100vh;
+}      
+    header{
+        grid-column: span 2;
+    }
+    footer{
+        grid-column: span 2;
+    }
+
 div{
+    padding: 10px;
+}
+#onetwo, #twotwo, #threetwo, #fourtwo{
+    padding-right: 56px;
+}
+
+header{
     width: 200px;
-    height: 200px;
-    background-color: #e5989b;
 }
-
-h1{
+header h1{
     background-color: pink;
-    width: 100px;
+
+        /* Padding puts space between the border and the content within the border */
+    padding: 70px 15px 20px 100px;
+    border-top-left-radius: 25%;
+    border-left: 3px dashed black;
+    border-bottom: 3px dashed black;
+    border-bottom-right-radius: 25%;
 }
 
+/* finish styling borders with a personalized touch */
+p{
+    padding-left: 20px;
+}
+
+/* This is the 'What I Learned' Section.  It has a Light Pink Background color with 3 different border styles that are a noticeably darker pink.  The title is an H2 that has been slightly modified with and HR rule also slightly modified.  Within the section is a List with p elements under each li element. */
+
+/* here is the class that has been assigned to the two (Left and Right) columns of the 'What I Learned' Section.  Both sections have been wrapped in what looks like a 1 section border but the border is styled that way within each column.  The border style is a ridge style that has a thickness of 7px and a custom pink color to accentuate the background color.  Within the sections is a slightly darker pink text to keep up with the theme of the page */
+.one{
+    color: rgb(175, 115, 125);
+    background-color: pink;
+    border-top: 7px ridge rgb(214, 143, 155);
+    border-bottom: 2px double white;
+}
+    /* I only wanted to edit the left column of the first row so i gave each left column and id of the numbered row they are in.  This column is in row 1 so and id of #one has been set.  In which i was able to adjust the border-left to the size, style, and color along with the height to accomodate the content within */
 #one{
-    background-color: pink;
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
+    border-left: 7px ridge rgb(214, 143, 155);
+    height: 170px;
+    
 
     /* By adding 'border box' it removes any addition to the size of the div and conforms it to the size that was initially specified */
-    box-sizing: border-box;
+
+        /* This was initially added but the grid display defeats the purpose of this so it's commented out */
+    /* box-sizing: border-box; */
+}
+    /* like the id naming convention for the first column of each row, the second column of each row is similar but it includes the column number.  This is named #onetwo
+    for Row one, Column Two.
+    in this the top right border radius is adjusted to be well round and the border right size, style, and color are adjusted to match the left column */
+#onetwo{
+    border-top-right-radius: 25%;
+    border-right: 7px ridge rgb(214, 143, 155);
+}
+    /* The H2 titles the column.  The bottom margin is reduced to make the HR tighter against it.  Along with it being aligned to the right if also added a little more padding to the right to be able to stay within the border of the column. */
+.one h2{
+    margin-bottom: 1px;
+    text-align: right;
+    padding-right: 10px;
+}
+    /* The HR within the column is actually a double HR and has a top and bottom line.  The top line has a dark pink color while the bottom has a light pink color.  The margin of the top has been reduced to make it tighter against the H2 above. */
+.one hr{
+    border-top: 1px double rgb(175, 115, 125);
+    border-bottom: 1px double rgb(254, 229, 233);
+    margin-top: 1px;
 }
 
-#two{
+    /* What has been applied to the first row applies also to the rows that follow with minor changes that will be explained when they come up. */
+.two{
+    color: rgb(254, 229, 233);
     background-color: #e5989b;
-    border-color: #ffcdb2;
-    border-width: 3px;
-    border-style: dashed;
-    border-left-width: 8px;
+    border-top: 2px double white;
+    border-bottom: 2px double white;
+    padding-right: 100px;
+}
+#two{
+    border-left: 7px ridge #c97779;
+    height: 100px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+#twotwo{
+    border-right: 7px ridge #c97779;
+}
+.two h2{
+    margin-bottom: 1px;
+}
+.two hr{
+    border-top: 1px double rgb(175, 115, 125);
+    border-bottom: 1px double rgb(254, 229, 233);    margin-top: 1px;
 }
 
-#three{
+.three{
+    color: rgb(250, 207, 214);
     background-color: #b5838d;
-        /* Shorthand to create borders */
-    border: 4px solid black;
-    border-radius: 10%;
+    border-top: 2px solid white;
+    border-bottom: 2px double white;
+}
+#three{
+    border-left: 7px ridge #8a545f;
+    height: 100px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+#threetwo{
+    border-right: 7px ridge #8a545f;
+
+}
+    /* Here there are two topics within one row "padding" and "margin".  Because of this there are H2s within the column that needed some adjusting.
+    For each topic an id was created to accomodate and the alignment and margin were adjusted to for the styling convention it needed */
+#padding, #margin{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 1px;
+}
+.three h2{
+    margin-bottom: 1px;
+}
+.three hr{
+    border-top: 1px double rgb(175, 115, 125);
+    border-bottom: 1px double rgb(254, 229, 233);    margin-top: 1px;
+}
+
+.four{
+    color: rgb(250, 207, 214);
+    background-color: #8e5a64;
+    border-top: 2px double white;
+    border-bottom: 7px solid #64363f;
+}
+#four{
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-left: 7px ridge #64363f;
+    height: 100px;
+}
+#fourtwo{
+    border-bottom-right-radius: 25%;
+    border-right: 7px ridge #64363f;
+}#display, #units{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 1px;
+}
+.four h2{
+    margin-bottom: 1px;
+    text-align: center;
+    padding-right: 10px;
+}
+.four hr{
+    border-top: 1px double rgb(175, 115, 125);
+    border-bottom: 1px double rgb(254, 229, 233);
+    margin-top: 1px;
+}
+
+footer{
+    text-align: right;
+    background-color: pink;
 }
