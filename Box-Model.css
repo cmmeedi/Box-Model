@@ -5,12 +5,12 @@ body{
     grid-template-rows: auto auto auto auto;
     min-height: 100vh;
 }      
-    header{
-        grid-column: span 2;
+@media(min-width: 40em){
+    body{
+        grid-template-columns: 12em 1fr;    
     }
-    footer{
-        grid-column: span 2;
-    }
+}
+
 
 div{
     padding: 10px;
@@ -31,6 +31,49 @@ header h1{
     border-left: 3px dashed black;
     border-bottom: 3px dashed black;
     border-bottom-right-radius: 25%;
+}
+
+#circle1, #circle2, #circle3{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+}
+#circle1{
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    background: linear-gradient(150deg, rgba(214, 143, 155, 35), rgba(100,54,63, 0.3) 70.71%),
+    linear-gradient(175deg, rgba(181,131,141,.8), rgba(138,84,95,0.3) 70.71%),
+    linear-gradient(360deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    box-shadow: 
+    40px -43px 36px 6px rgb(254, 229, 233),
+    -60px -6px 36px 6px pink;
+}
+#circle2{
+    position: absolute;
+    height: 87px;
+    width: 87px;
+    top: 12%;
+    left: 73%;
+    background: linear-gradient(250deg, rgba(214, 143, 155, 1), rgba(80,54,63, 0.3) 70.71%),
+    linear-gradient(175deg, rgba(181,131,141,.8), rgba(138,84,95,0.3) 70.71%),
+    linear-gradient(27deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    box-shadow: 
+    -20px -40px 72px 3px rgb(214, 143, 155);
+}
+#circle3{
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    top: 3%;
+    left: 89%;
+    background: linear-gradient(12deg, rgba(214, 143, 155, 1), rgba(100,54,63, 0.3) 70.71%),
+    linear-gradient(234deg, rgba(181,131,141,.8), rgba(138,84,95,0.3) 70.71%),
+    linear-gradient(172deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    box-shadow: 
+    -29px 10px 52px 12px rgba(231, 124, 255, 0.8);
 }
 
 /* finish styling borders with a personalized touch */
@@ -105,12 +148,12 @@ p{
 
 .three{
     color: rgb(250, 207, 214);
-    background-color: #b5838d;
+    background-color: rgb(181, 131, 141);
     border-top: 2px solid white;
     border-bottom: 2px double white;
 }
 #three{
-    border-left: 7px ridge #8a545f;
+    border-left: 7px ridge rgb(138, 84, 95);
     height: 100px;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
@@ -148,7 +191,7 @@ p{
 }
 #fourtwo{
     border-bottom-right-radius: 25%;
-    border-right: 7px ridge #64363f;
+    border-right: 7px ridge rgb(100, 54, 63);
 }#display, #units{
     text-align: center;
     list-style: none;
